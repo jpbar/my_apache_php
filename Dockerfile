@@ -29,5 +29,5 @@ ADD apache-config.conf /etc/apache2/sites-available/
 RUN a2dissite default
 RUN a2ensite apache-config.conf
  
-# By default, simply start apache.
+# By default, simply start apache
 CMD /usr/sbin/apache2ctl -D FOREGROUND
